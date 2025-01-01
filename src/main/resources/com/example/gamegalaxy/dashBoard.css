@@ -1,0 +1,31 @@
+#anchorPane{
+    -fx-background-color: "#333333";
+    -fx-text-fill: "white";
+}
+
+.label{
+    -fx-background-color: "#333333";
+    -fx-text-fill: "white";
+}
+
+#label1{
+    -fx-border-color: "white";
+    -fx-border-radius: 5;
+}
+#label2{
+    -fx-border-color: "white";
+    -fx-border-radius: 5;
+}
+#label3{
+    -fx-border-color: "white";
+    -fx-border-radius: 5;
+}
+#label4{
+    -fx-border-color: "white";
+    -fx-border-radius: 5;
+}
+#label5{
+    -fx-border-color: "white";
+    -fx-border-radius: 5;
+}
+

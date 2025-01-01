@@ -1,0 +1,11 @@
+.text-field{
+    -fx-background-color: "#333333";
+    -fx-border-color:"white";
+    -fx-border-radius:5;
+    -fx-text-fill:"white";
+}
+
+.button{
+    -fx-background-color:"#880ED4";
+    -fx-background-radius:10;
+}

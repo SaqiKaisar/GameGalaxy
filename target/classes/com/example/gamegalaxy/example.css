@@ -1,0 +1,57 @@
+/* Customize the thumb and track of the scrollbar */
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #bbb;
+    -fx-background-radius: 20px;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+/* Customize the arrows of the scrollbar */
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: #bbb;
+    -fx-shape: "M 4 4 L 8 0 L 12 4 L 12 16 L 8 12 L 4 16 Z";
+}
+
+/* Add hover effect to the arrows */
+.scroll-bar:vertical .increment-button:hover .increment-arrow,
+.scroll-bar:vertical .decrement-button:hover .decrement-arrow {
+    -fx-background-color: #ddd;
+}
+
+/* Customize the thumb and track of the horizontal scrollbar */
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #bbb;
+    -fx-background-radius: 20px;
+}
+
+.scroll-bar:horizontal .track {
+    -fx-background-color: transparent;
+}
+
+/* Customize the arrows of the horizontal scrollbar */
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+}
+
+.scroll-bar:horizontal .increment-arrow,
+.scroll-bar:horizontal .decrement-arrow {
+    -fx-background-color: #bbb;
+    -fx-shape: "M 0 4 L 4 0 L 16 0 L 20 4 L 16 8 L 4 8 Z";
+}
+
+/* Add hover effect to the arrows */
+.scroll-bar:horizontal .increment-button:hover .increment-arrow,
+.scroll-bar:horizontal .decrement-button:hover .decrement-arrow {
+    -fx-background-color: #ddd;
+}

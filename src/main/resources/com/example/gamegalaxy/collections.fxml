@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gamegalaxy.CollectionsController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #333333;">
+            <children>
+                <AnchorPane layoutX="-21.0" prefHeight="720.0" prefWidth="392.0" style="-fx-background-color: #111111;">
+                    <children>
+                        <ImageView fitHeight="168.0" fitWidth="168.0" layoutX="112.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@pp.png" />
+                            </image>
+                        </ImageView>
+                        <GridPane layoutX="86.0" layoutY="258.0" prefHeight="217.0" prefWidth="230.0" style="-fx-background-color: #111111;">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Button fx:id="profileButton" mnemonicParsing="false" onAction="#profile" onMouseEntered="#enterProfileMouse" onMouseExited="#exitProfileMouse" prefHeight="36.0" prefWidth="216.0" style="-fx-background-color: #880ED4; -fx-background-radius: 12;" text="Profile" textFill="#e9dede">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="collectionsButton" layoutX="10.0" layoutY="19.0" mnemonicParsing="false" onAction="#collectiions" onMouseEntered="#enterCollectionsMouse" onMouseExited="#exitCollectionsMouse" prefHeight="36.0" prefWidth="216.0" style="-fx-background-color: #880ED4; -fx-background-radius: 12;" text="Collections" textFill="#e9dede" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="optionsButton" layoutX="10.0" layoutY="123.0" mnemonicParsing="false" onAction="#options" onMouseEntered="#enterOptionsMouse" onMouseExited="#exitOptionsMouse" prefHeight="36.0" prefWidth="216.0" style="-fx-background-color: #880ED4; -fx-background-radius: 12;" text="Options" textFill="#e9dede" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="logOutButton" layoutX="10.0" layoutY="168.0" mnemonicParsing="false" onAction="#logOut" onMouseEntered="#enterLogOutMouse" onMouseExited="#exitLogOutMouse" prefHeight="36.0" prefWidth="216.0" style="-fx-background-color: #880ED4; -fx-background-radius: 12;" text="Log Out" textFill="#e9dede" GridPane.rowIndex="4">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </GridPane>
+                        <ImageView fitHeight="74.0" fitWidth="81.0" layoutX="159.0" layoutY="621.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@logo2.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            <Label layoutX="460.0" layoutY="87.0" text="Your Collections:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+                <GridPane fx:id="gridPane" layoutX="464.0" layoutY="311.0" prefHeight="351.0" prefWidth="544.0" style="-fx-background-color: white;" visible="false">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="49.66668701171875" minHeight="10.0" prefHeight="28.666646321614586" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="130.00002034505206" minHeight="10.0" prefHeight="130.00002034505206" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="47.66668701171875" minHeight="10.0" prefHeight="28.33331298828125" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="28.333343505859375" minHeight="10.0" prefHeight="27.66668701171875" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label fx:id="label2" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="141.0" prefWidth="665.0" text="Label" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label3" alignment="CENTER" layoutX="10.0" layoutY="60.0" prefHeight="141.0" prefWidth="665.0" text="Label" GridPane.rowIndex="2">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label4" alignment="CENTER" layoutX="10.0" layoutY="176.0" prefHeight="141.0" prefWidth="665.0" text="Label" GridPane.rowIndex="3">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label5" alignment="CENTER" layoutX="10.0" layoutY="217.0" prefHeight="141.0" prefWidth="665.0" text="Label" GridPane.rowIndex="4">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label6" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="668.0" text="Label" GridPane.rowIndex="5">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label1" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="544.0" text="Label">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label7" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="668.0" text="Label" GridPane.rowIndex="6">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                  <Label fx:id="label8" alignment="CENTER" layoutX="10.0" layoutY="298.0" prefHeight="53.0" prefWidth="668.0" text="Label" GridPane.rowIndex="7">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label9" alignment="CENTER" layoutX="10.0" layoutY="305.0" prefHeight="72.0" prefWidth="544.0" text="Label" GridPane.rowIndex="8">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </GridPane>
+            <Line endX="50.88885498046875" layoutX="561.0" layoutY="118.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+            <Button fx:id="allGamesButton" layoutX="465.0" layoutY="147.0" mnemonicParsing="false" onAction="#showAllGames" onMouseEntered="#enterAllGames" onMouseExited="#exitAllGames" text="All Games" />
+            <Button fx:id="completedGamesButton" layoutX="465.0" layoutY="203.0" mnemonicParsing="false" onAction="#showCompletedGames" onMouseEntered="#enterCompletedGames" onMouseExited="#exitCompletedGames" text="Completed Games" visible="false" />
+            <Button fx:id="backloggedGamesButton" layoutX="602.0" layoutY="203.0" mnemonicParsing="false" onAction="#showBackloggedGames" onMouseEntered="#enterBackloggedGames" onMouseExited="#exitBackloggedGames" text="Backlogged Games" visible="false" />
+            <Button fx:id="currentButton" layoutX="737.0" layoutY="203.0" mnemonicParsing="false" onAction="#showCurrentGames" onMouseEntered="#enterCurrent" onMouseExited="#exitCurrent" text="Currently Playing" visible="false" />
+            <Button fx:id="myGamesButton" layoutX="552.0" layoutY="147.0" mnemonicParsing="false" onAction="#showMyGames" onMouseEntered="#enterMyGames" onMouseExited="#exitMyGames" text="My Games" />
+            <Button fx:id="searchButton" layoutX="641.0" layoutY="147.0" mnemonicParsing="false" onAction="#search" onMouseEntered="#enterSearch" onMouseExited="#exitSearch" text="Search" />
+            <ScrollPane fx:id="scrollPane" layoutX="464.0" layoutY="296.0" prefHeight="393.0" prefWidth="665.0" visible="false">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+              </content>
+            </ScrollPane>
+            <TextField fx:id="searchField" alignment="CENTER" layoutX="467.0" layoutY="200.0" nodeOrientation="LEFT_TO_RIGHT" promptText="enter game title" visible="false" />
+            <Button fx:id="searchGameButton" layoutX="604.0" layoutY="245.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#searchGame" onMouseEntered="#enterSearch1" onMouseExited="#exitSearch1" text="Search" visible="false" />
+            <Button fx:id="filterButton" layoutX="465.0" layoutY="202.0" mnemonicParsing="false" onAction="#filter" onMouseEntered="#enterFilter" onMouseExited="#exitFilter" text="Filter" visible="false" />
+            <Button fx:id="genreButton" layoutX="523.0" layoutY="202.0" mnemonicParsing="false" onAction="#chooseGenre" onMouseEntered="#enterGenre" onMouseExited="#exitGenre" text="Genre" visible="false" />
+            <Button fx:id="completionTimeButton" layoutX="585.0" layoutY="202.0" mnemonicParsing="false" onAction="#showCompletionTime" onMouseEntered="#enterCompletionTime" onMouseExited="#exitCompletionTime" text="Completion Time" visible="false" />
+            <Button fx:id="ratingButton" layoutX="705.0" layoutY="202.0" mnemonicParsing="false" onAction="#showRating" onMouseEntered="#enterRating" onMouseExited="#exitRating" text="Rating" visible="false" />
+            <Button fx:id="recommendationButton" layoutX="707.0" layoutY="147.0" mnemonicParsing="false" onAction="#showRecommendation" onMouseEntered="#enterRecommendation" onMouseExited="#exitRecommendation" text="Recommendation" />
+            <ComboBox fx:id="genreBox" layoutX="463.0" layoutY="241.0" prefWidth="150.0" promptText="Choose Genre" visible="false">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ComboBox>
+            <TextField fx:id="lowerField" alignment="CENTER" layoutX="639.0" layoutY="239.0" prefHeight="25.0" prefWidth="81.0" promptText="Lowerbound" visible="false" />
+            <TextField fx:id="upperField" alignment="CENTER" layoutX="741.0" layoutY="239.0" prefHeight="25.0" prefWidth="81.0" promptText="Upperbound" visible="false" />
+            <Label fx:id="completionLabel" layoutX="464.0" layoutY="241.0" text="The game is finished within:" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="findButton" layoutX="843.0" layoutY="239.0" mnemonicParsing="false" onAction="#find" onMouseEntered="#enterFind" onMouseExited="#exitFind" text="Find" visible="false" />
+            <ScrollPane fx:id="scrollPane2" layoutX="1030.0" layoutY="496.0" prefHeight="164.0" prefWidth="213.0" visible="false" />
+            <Label fx:id="reviewLabel" layoutX="1031.0" layoutY="465.0" text="Reviews:" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="findButton1" layoutX="639.0" layoutY="241.0" mnemonicParsing="false" onAction="#find1" onMouseEntered="#enterFind1" onMouseExited="#exitFind1" text="Find" visible="false" />
+            <ImageView fx:id="gameImage" fitHeight="145.0" fitWidth="196.0" layoutX="1036.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true" />
+<!--            <Button fx:id="showButton" layoutX="635.0" layoutY="234.0" mnemonicParsing="false" onAction="#showGames" onMouseEntered="#enterShow" onMouseExited="#exitShow" text="Show" visible="false" />-->
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

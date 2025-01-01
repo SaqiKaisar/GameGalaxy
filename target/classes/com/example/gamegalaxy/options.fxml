@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="options.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gamegalaxy.OptionsController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #333333;">
+            <children>
+                <AnchorPane layoutX="-21.0" prefHeight="720.0" prefWidth="392.0" style="-fx-background-color: #111111;">
+                    <children>
+                        <ImageView fitHeight="168.0" fitWidth="168.0" layoutX="112.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@pp.png" />
+                            </image>
+                        </ImageView>
+                        <GridPane layoutX="86.0" layoutY="258.0" prefHeight="217.0" prefWidth="230.0" style="-fx-background-color: #111111;">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Button fx:id="profileButton" mnemonicParsing="false" onAction="#profile" onMouseEntered="#enterProfileMouse" onMouseExited="#exitProfileMouse" prefHeight="36.0" prefWidth="216.0" style="-fx-background-color: #880ED4; -fx-background-radius: 12;" text="Profile" textFill="#e9dede">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="collectionsButton" layoutX="10.0" layoutY="19.0" mnemonicParsing="false" onAction="#collectiions" onMouseEntered="#enterCollectionsMouse" onMouseExited="#exitCollectionsMouse" prefHeight="36.0" prefWidth="216.0" style="-fx-background-color: #880ED4; -fx-background-radius: 12;" text="Collections" textFill="#e9dede" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="optionsButton" layoutX="10.0" layoutY="123.0" mnemonicParsing="false" onAction="#options" onMouseEntered="#enterOptionsMouse" onMouseExited="#exitOptionsMouse" prefHeight="36.0" prefWidth="216.0" style="-fx-background-color: #880ED4; -fx-background-radius: 12;" text="Options" textFill="#e9dede" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="logOutButton" layoutX="10.0" layoutY="168.0" mnemonicParsing="false" onAction="#logOut" onMouseEntered="#enterLogOutMouse" onMouseExited="#exitLogOutMouse" prefHeight="36.0" prefWidth="216.0" style="-fx-background-color: #880ED4; -fx-background-radius: 12;" text="Log Out" textFill="#e9dede" GridPane.rowIndex="4">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </GridPane>
+                        <ImageView fitHeight="74.0" fitWidth="81.0" layoutX="159.0" layoutY="621.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@logo2.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <Label fx:id="infoLabel" layoutX="486.0" layoutY="164.0" text="Options:" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Line fx:id="line" endX="-23.0" endY="-1.52587890625E-5" layoutX="586.0" layoutY="194.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+            <Button fx:id="addPlaythroughButton" layoutX="486.0" layoutY="213.0" mnemonicParsing="false" onAction="#addPlaythrough" onMouseEntered="#enterAddPlaythrough" onMouseExited="#exitAddPlaythrough" prefHeight="37.0" prefWidth="110.0" text="Add Playthrough" textFill="WHITE" />
+            <GridPane fx:id="gridPane" layoutX="560.0" layoutY="307.0" prefHeight="238.0" prefWidth="398.0" style="-fx-background-color: white;" visible="false">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="46.60001220703125" minHeight="5.000006103515624" prefHeight="26.60001220703125" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="99.00001220703123" minHeight="10.0" prefHeight="99.00001220703123" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="36.600012207031256" minHeight="10.0" prefHeight="30.199987792968756" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField prefHeight="65.0" prefWidth="366.0" />
+                  <TextField fx:id="gameTitleField" alignment="CENTER" prefHeight="82.0" prefWidth="398.0" promptText="Game Title" />
+                  <TextField fx:id="ratingField" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="398.0" promptText="Raing" GridPane.rowIndex="1" />
+                  <TextField fx:id="reviewField" alignment="CENTER" layoutX="10.0" layoutY="64.0" prefHeight="160.0" prefWidth="398.0" promptText="Review" GridPane.rowIndex="2" />
+                  <TextField fx:id="completionTimeField" alignment="CENTER" layoutX="10.0" layoutY="64.0" prefHeight="82.0" prefWidth="398.0" promptText="Play Time" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <Button fx:id="submitButton" layoutX="931.0" layoutY="583.0" mnemonicParsing="false" onAction="#submit" onMouseEntered="#enterSubmit" onMouseExited="#exitSubmit" prefHeight="37.0" prefWidth="74.0" text="Submit" textFill="WHITE" visible="false" />
+            <ComboBox fx:id="modifyStatusBox" layoutX="485.0" layoutY="470.0" prefWidth="150.0" promptText="Choose New Status" visible="false">
+               <effect>
+                  <InnerShadow />
+               </effect></ComboBox>
+            <Button fx:id="modifyPlaythroughButton" layoutX="621.0" layoutY="212.0" mnemonicParsing="false" onAction="#modifyPlaythrough" onMouseEntered="#enterModifyPlaythrough" onMouseExited="#exitModifyPlaythrough" prefHeight="37.0" prefWidth="126.0" text="Modify Playthrough" textFill="WHITE" />
+            <TextField fx:id="modifyPlayTimeField" alignment="CENTER" layoutX="486.0" layoutY="357.0" promptText="New Play Time" visible="false" />
+            <ComboBox fx:id="statusBox" layoutX="570.0" layoutY="571.0" prefWidth="150.0" promptText="Choose Status" visible="false">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ComboBox>
+            <Button fx:id="modifyPlayTimeButton" layoutX="590.0" layoutY="404.0" mnemonicParsing="false" onAction="#modifyPlayTime" onMouseEntered="#enterModifyPlayTime" onMouseExited="#exitModifyPlayTime" prefHeight="37.0" prefWidth="173.0" text="Modify Play Time" textFill="WHITE" visible="false" />
+            <Button fx:id="modifyStatusButton" layoutX="590.0" layoutY="508.0" mnemonicParsing="false" onAction="#modifyStatus" onMouseEntered="#enterModifyStatus" onMouseExited="#exitModifyStatus" prefHeight="37.0" prefWidth="126.0" text="Modify Status" textFill="WHITE" visible="false" />
+            <TextField fx:id="modifyTitleField" alignment="CENTER" layoutX="486.0" layoutY="295.0" promptText="Game Title" visible="false" />
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
